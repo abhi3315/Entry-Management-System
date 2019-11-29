@@ -1,0 +1,16 @@
+I used TWILIO api to send sms and shared the code on git hub with authentication key.
+Because of some privacy policies and security purpose my twilio trial account has been suspended and can not be used to send sms..
+So I made some changes in sendsmshost.py and removed authentication key and some other confidential data.
+
+So to send sms: 
+1. You have to create a account on twilio.
+2. Go to dashboard.
+3. Choose a number to send SMS.
+4. Copy a ACCOUNT SID and paste it in sendsmshost.py as followed:
+	account_sid = 'paste ACCOUNT SID here'
+5. Copy AUTH TOKEN and paste it in sendsmshost.py as followed:
+	auth_token = 'paste AUTH TOKEN here'
+6. Copy your NUMBER provided to send sms and paste it in sendsmshost.py as followed:
+	from_='paste NUMBER here'
+
+if you are using a trial account of twilio then you can not send sms to any number. You have to add the number first. visit: “http://twilio.com/user/account/phone-numbers/verified"
